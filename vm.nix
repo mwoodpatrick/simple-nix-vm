@@ -7,7 +7,7 @@
 {
   # Internationalisation options
   i18n.defaultLocale = "en_US.UTF-8";
-  console.keyMap = "fr";
+  console.keyMap = "us";
 
   # Options for the screen
   virtualisation.vmVariant = {
@@ -39,9 +39,9 @@
 
   # X configuration
   services.xserver.enable = true;
-  services.xserver.layout = "fr";
+  services.xserver.xkb.layout = "us";
 
-  services.xserver.displayManager.autoLogin.user = "guest";
+  services.displayManager.autoLogin.user = "guest";
   services.xserver.desktopManager.xfce.enable = true;
   services.xserver.desktopManager.xfce.enableScreensaver = false;
 
@@ -65,5 +65,5 @@
     wrk
   ];
 
-  system.stateVersion = "22.11";
+  system.stateVersion = "24.05";
 }
